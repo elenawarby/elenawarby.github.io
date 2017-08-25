@@ -1,8 +1,8 @@
 var japan_gallery_paths = [
-  "./images/Japan/B317858-R2-18-17.JPG",
-  "./images/Japan/B317858-R2-20-19.JPG",
-  "./images/Japan/Scan14.jpeg",
-  "./images/Japan/Scan19.jpeg"
+  "../images/Japan/B317858-R2-18-17.JPG",
+  "../images/Japan/B317858-R2-20-19.JPG",
+  "../images/Japan/Scan14.jpeg",
+  "../images/Japan/Scan19.jpeg"
 ]
 
 var japan_gallery_captions = [
