@@ -1,0 +1,242 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td, img { margin: 0; padding: 0; }
+
+html, body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250,250,250);
+}
+
+/*/////////////////////////////////////////////*/
+/* INDEX */
+/*/////////////////////////////////////////////*/
+
+#index {
+  width: 100%;
+  height: 100%;
+}
+
+#index #title {
+  font-size: 75px;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px; /* margin is -0.5 * dimension */
+  margin-top: -25px;
+}
+
+#index #title a:link     {text-decoration: none; border-bottom: 1px dashed #145252; color: #145252;}
+#index #title a:visited  {text-decoration: none; border-bottom: 1px dashed #145252; color: #145252;}
+#index #title a:hover    {text-decoration: none; border-bottom: 1px dotted #293d3d; color: #293d3d;}
+#index #title a:active   {text-decoration: none; border-bottom: 1px dotted #293d3d; color: #293d3d;}
+
+#index img {
+  padding-top: 150px;
+  display: block;
+  width: 40%;
+  margin: auto;
+  opacity: 0.4;
+  transition: 0.8s;
+}
+
+#index img:hover {
+  opacity: 1.0;
+  width: 60%;
+}
+
+/*/////////////////////////////////////////////*/
+/* HEADER */
+/*/////////////////////////////////////////////*/
+
+
+header {
+  width: 100%;
+  height: 80px;
+  /*border: 1px solid black;*/
+}
+
+#title {
+  margin-left: 25px;
+  margin-top: 10px;
+  transition: 0.3s;
+  width: 14%;
+  display: block;
+  float: left;
+}
+
+#title a:link     {text-decoration: none; color: rgb(20, 20, 20);}
+#title a:visited  {text-decoration: none; color: rgb(20, 20, 20);}
+#title a:hover    {text-decoration: none; border-bottom: 1px dashed rgb(100, 100, 100); color: rgb(100, 100, 100);}
+#title a:active   {text-decoration: none; border-bottom: 1px dashed rgb(100, 100, 100); color: rgb(100, 100, 100);}
+
+#title img {
+  width: 100%;
+}
+
+#about {
+  margin-right: 25px;
+  margin-top: 45px;
+  width: 14%;
+  float: right;
+  display: inline-block;
+}
+
+#about img {
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  left: 25px;
+  top: 150px;
+  font-size: 14px;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  margin-top: 5px;
+}
+
+/*/////////////////////////////////////////////*/
+/* GENERAL */
+/*/////////////////////////////////////////////*/
+
+.active {
+  border-bottom: 1px dashed rgb(50, 50, 50);
+}
+
+nav a:link     {text-decoration: none; color: rgb(50, 50, 50);}
+nav a:visited  {text-decoration: none; color: rgb(50, 50, 50);}
+nav a:hover    {text-decoration: none; border-bottom: 1px dashed rgb(100, 100, 100); color: rgb(100, 100, 100);}
+nav a:active   {text-decoration: none; border-bottom: 1px dashed rgb(100, 100, 100); color: rgb(100, 100, 100);}
+
+/*/////////////////////////////////////////////*/
+/* img-gallery */
+/*/////////////////////////////////////////////*/
+
+#img-gallery {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+#img-gallery .landscape-img {
+  width: 80%;
+  margin: 15px 0 15px 0;
+}
+
+#img-gallery .portrait-img {
+  width: 45%;
+  margin: 15px 0 15px 0;
+}
+
+/*/////////////////////////////////////////////*/
+/* MODAL */
+/*/////////////////////////////////////////////*/
+
+.modal-img {
+  cursor: pointer;
+  transition: 1.0s;
+}
+
+.modal-img:hover {opacity: 0.8;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(250,250,250,0.95); /* white w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 94%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position: absolute;
+  font-size: 10pt;
+  width: 90%;
+  text-align: right;
+  padding: 10px 0;
+  color: rgb(50, 50, 50);
+  bottom: 20px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  background-color: rgb(235, 250, 250);
+  padding: 15px 50px 15px 15px;
+  top: 20px;
+  left: 20px;
+  color: rgb(50, 50, 50);
+  font-size: 9pt;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img-gallery {
+  width: 100%;
+  height: 100%;
+}
+
+.img-gallery img {
+  /*width: 80%;*/
+  height: 93%;
+}
+
+.img-gallery a:link     {text-decoration: none; color: #145252;}
+.img-gallery a:visited  {text-decoration: none; color: #145252;}
+.img-gallery a:hover    {text-decoration: underline; color: #293d3d; cursor: pointer;}
+.img-gallery a:active   {text-decoration: underline; color: #293d3d;}
+
+.img-gallery .position-indicator {
+  position: absolute;
+  /*font-size: 0.7em;*/
+  top: 75px;
+  left: 35px;
+}
+
+.img-gallery .title {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+
+/*/////////////////////////////////////////////*/
+/* MASONRY */
+/*/////////////////////////////////////////////*/
+
+.grid {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid img {
+  width: 20%;
+  border: 1px solid black;
+}
