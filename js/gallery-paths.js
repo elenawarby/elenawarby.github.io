@@ -1,8 +1,8 @@
 var japan_gallery_paths = [
-  "/Users/JackGoodwin/Documents/Programming%20work/Web%20projects/ElenaWarby/images/Japan/B317858-R2-18-17.JPG",
-  "/Users/JackGoodwin/Documents/Programming%20work/Web%20projects/ElenaWarby/images/Japan/B317858-R2-20-19.JPG",
-  "/Users/JackGoodwin/Documents/Programming%20work/Web%20projects/ElenaWarby/images/Japan/Scan14.jpeg",
-  "/Users/JackGoodwin/Documents/Programming%20work/Web%20projects/ElenaWarby/images/Japan/Scan19.jpeg"
+  "./images/Japan/B317858-R2-18-17.JPG",
+  "./images/Japan/B317858-R2-20-19.JPG",
+  "./images/Japan/Scan14.jpeg",
+  "./images/Japan/Scan19.jpeg"
 ]
 
 var japan_gallery_captions = [
