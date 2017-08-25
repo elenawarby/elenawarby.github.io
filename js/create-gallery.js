@@ -54,6 +54,14 @@ function createGallery(id, img_paths, img_captions) {
   document.getElementById("myModal").appendChild(gallery_container);
 
   showDivs(slideIndex, id);
+
+  document.addEventListener('keydown', function (event) {
+    if (event.keyCode == 37) {
+      plusDivs(-1, id);
+    } else if (event.keyCode == 39) {
+      plusDivs(1, id);
+    }
+  });
 }
 
 function plusDivs(n, id) {
@@ -87,4 +95,8 @@ function updateCaption(n) {
 
 function getNumElements(parent_id) {
   return document.getElementById(parent_id).querySelectorAll("img").length;
+}
+
+function keyEvents() {
+
 }
