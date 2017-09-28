@@ -11,3 +11,14 @@ var japan_gallery_captions = [
   "Paper yarn + recycled plastic packaging from Tsukiji fish market, March 2017, Tokyo",
   "Paper yarn + recycled plastic packaging from Tsukiji fish market, March 2017, Tokyo"
 ]
+
+var home_photographs = [
+  "apartment blocks in Naha.jpeg",
+  "apartment blocks in Tokyo.jpeg",
+  "architecture in japan.jpeg",
+  "backgarden.jpeg",
+  "blue doors skinny windows.jpeg",
+  "moss greens.jpeg",
+  "naha riverbank.jpeg",
+  "peace.jpeg"
+]

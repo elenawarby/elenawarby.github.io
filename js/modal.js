@@ -1,11 +1,14 @@
 var modal = document.getElementById('myModal');
-
-var imgs = document.getElementById("img-gallery").querySelectorAll("img");
+var modalImg = document.getElementById("img01");
+var imgs = document.getElementsByClassName("img-gallery")[0].querySelectorAll("img");
+var captionText = document.getElementById("caption");
 
 for (var i = 0; i < imgs.length; i++) {
   var img = imgs[i];
   img.onclick = function () {
     modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
   }
 }
 

@@ -1,11 +1,14 @@
 // ------------------------------------------------
 // dynamic image gallery creation. call in html - createGallery(id, img_paths)
 // ------------------------------------------------
-
-var slideIndex = 1;
+var slideIndex = 0;
+var gallerySize = 0;
 
 // parameters = identification, array of image names
-function createGallery(id, img_paths, img_captions) {
+function createGallery(id, img_paths, img_captions, _slideIndex) {
+
+  slideIndex = _slideIndex;
+
   // create container DIV
   var gallery_container = document.createElement("DIV");
   gallery_container.className = "img-gallery";
@@ -62,6 +65,8 @@ function createGallery(id, img_paths, img_captions) {
       plusDivs(1, id);
     }
   });
+
+  gallerySize = img_paths.length;
 }
 
 function plusDivs(n, id) {
@@ -71,13 +76,14 @@ function plusDivs(n, id) {
 function showDivs(n, id) {
   var i;
   var x = document.getElementsByClassName(id + "-item");
-  if (n > x.length) {
-    slideIndex = 1
+
+  if (n > gallerySize) {
+    slideIndex = 1;
   }
   if (n < 1) {
-    slideIndex = x.length
+    slideIndex = x.length;
   }
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < gallerySize; i++) {
     x[i].style.display = "none";
   }
   x[slideIndex - 1].style.display = "block";
@@ -95,8 +101,4 @@ function updateCaption(n) {
 
 function getNumElements(parent_id) {
   return document.getElementById(parent_id).querySelectorAll("img").length;
-}
-
-function keyEvents() {
-
 }
