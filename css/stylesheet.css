@@ -62,6 +62,11 @@ nav a:visited  {text-decoration: none; }
 nav a:hover    {text-decoration: none; opacity: 0.7;}
 nav a:active   {text-decoration: none; opacity: 0.7;}
 
+a.link1:link     {text-decoration: none; color: #006666;}
+a.link1:visited  {text-decoration: none; color: #006666;}
+a.link1:hover    {text-decoration: none; color: #006666; border-bottom: 1px dashed #006666;}
+a.link1:active   {text-decoration: none; color: #006666; border-bottom: 1px dashed #006666}
+
 /*/////////////////////////////////////////////*/
 /* img-gallery */
 /*/////////////////////////////////////////////*/
