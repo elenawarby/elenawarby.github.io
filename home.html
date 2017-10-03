@@ -52,20 +52,23 @@
 
   <script type="text/javascript">
     var home_photographs = [
-      "apartment-blocks-in-Naha.jpg",
-      "moss-greens.jpg",
-      "yellow-the-colour-of-detachment.jpg",
-      "backgarden.jpeg",
-      "red-the-colour-of-strength.jpg",
-      "blue-doors-skinny-windows.jpg",
-      "naha-riverbank.jpg",
-      "peace.jpg"
+      "japan/moss-greens.jpg",
+      "japan/yellow-the-colour-of-detachment.jpg",
+      "japan/backgarden.jpg",
+      "japan/red-the-colour-of-strength.jpg",
+      "japan/blue-doors-skinny-windows.jpg",
+      "japan/peace.jpg",
+      "fabric/fabric-(1).jpg",
+      "fabric/fabric-(3).jpg",
+      "fabric/fabric-(5).jpg",
+      "fabric/fabric-(7).jpg",
+      "fabric/fabric-(9).jpg",
+      "fabric/fabric-(12).jpg",
     ]
 
     var img = document.getElementsByClassName('home')[0];
-    var rand = Math.floor((Math.random() * 8));
-    console.log(rand);
-    img.src = "images/japan/" + home_photographs[rand];
+    var rand = Math.floor((Math.random() * 12));
+    img.src = "images/" + home_photographs[rand];
   </script>
 </body>
 </html>
